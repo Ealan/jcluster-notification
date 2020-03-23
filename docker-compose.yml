@@ -1,0 +1,12 @@
+version: '3'
+services:
+  jcluster:
+    image: jcluster
+    container_name: jcluster
+    build:
+      context: ./
+    restart: always
+    tty: true
+    volumes:
+      - ./data:/data
+
